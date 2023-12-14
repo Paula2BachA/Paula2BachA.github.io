@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-image: url(https://www.fiftysounds.com/images/graphics/violet-gradient-background-1476.jpg);
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: #ffffff;
+  
+}
+
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 950px; 
+  background: #eeb3f3;
+  
+}
+
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: c;;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+  background-color: #b371da;
+  color: white;
+}
+
+article {
+  float: left;
+  padding-top: 0;
+  padding: 20px;
+  width: 70%;
+  background-color: #ffffff;
+  height: 950px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #c862cc;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+.texto{
+  color: #000;
+}
+.texto1{
+  background-color: #f0b2fd;
+}
+.foto1{
+  margin-top: 20px;
+  margin-left: 30px;
+}
